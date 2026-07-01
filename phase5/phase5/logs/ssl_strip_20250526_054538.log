@@ -1,0 +1,20 @@
+Tool: ssl_strip
+Target: localhost
+Timestamp: 20250526_054538
+Exit Code: 1
+STDOUT:
+SSL Stripping Attack Tool
+=========================
+Target: localhost
+Listen Port: 8080
+Mode: Full Attack (Proxy)
+=========================
+
+[INFO] Testing for SSL redirect and HSTS first before starting SSL strip proxy...
+[TEST] Testing localhost for HTTP->HTTPS redirects and HSTS presence...
+[ERROR] Could not connect to localhost on HTTP (port 80).
+
+[INFO] Target may not be vulnerable to SSL stripping. Attack proxy will not start.
+
+STDERR:
+

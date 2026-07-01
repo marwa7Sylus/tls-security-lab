@@ -1,0 +1,37 @@
+Tool: ai_ssl_orchestrator
+Target: localhost
+Timestamp: 20250526_054624
+Exit Code: 0
+STDOUT:
+
+======================================================================
+AI-POWERED SSL/TLS ATTACK ORCHESTRATOR
+======================================================================
+Target: localhost:443
+Mode: Manual / Exploit
+======================================================================
+
+[INFO] Loading AI security model...
+[SUCCESS] AI model loaded successfully
+[INFO] Scanning localhost with sslscan...
+
+[AI ANALYSIS] Security Status: VULNERABLE
+[AI ANALYSIS] Confidence: 0.50
+
+============================================================
+AI-POWERED ATTACK RECOMMENDATIONS
+============================================================
+
+1. SSL_STRIP ATTACK
+   Severity: MEDIUM
+   Reason: Insecure renegotiation or older TLS version might allow SSL stripping.
+   Script: ssl_strip.py
+
+[INFO] Manual mode: Recommendations displayed. Please select tools from the UI.
+[SUCCESS] Report generated: reports/localhost_security_report_20250526_054627.txt
+
+[COMPLETE] SSL/TLS security assessment completed.
+[REPORT] Final report generated: reports/localhost_security_report_20250526_054627.txt
+
+STDERR:
+

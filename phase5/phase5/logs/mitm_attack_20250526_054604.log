@@ -1,0 +1,21 @@
+Tool: mitm_attack
+Target: localhost
+Timestamp: 20250526_054604
+Exit Code: 1
+STDOUT:
+MITM SSL Attack Tool
+====================
+Target: localhost:443
+Listen Port: 8445
+Mode: Full Attack (Proxy)
+====================
+
+[INFO] Testing certificate validation first before starting MITM proxy...
+[TEST] Testing certificate validation for localhost...
+[ERROR] Socket error during certificate validation test: [Errno 111] Connection refused
+
+[INFO] Target has good certificate validation. MITM attack may be less effective.
+[INFO] MITM proxy will not start as target appears secure against certificate-based MITM.
+
+STDERR:
+

@@ -1,0 +1,39 @@
+Tool: ssl_downgrade
+Target: localhost
+Timestamp: 20250526_054453
+Exit Code: 1
+STDOUT:
+SSL/TLS Version Rollback Attack Tool
+====================================
+Target: localhost:443
+Mode: Full Attack (Proxy)
+Proxy Port: 8443
+====================================
+
+[INFO] Testing vulnerability first before starting proxy...
+[TEST] Testing localhost for SSL/TLS downgrade vulnerability...
+[INFO] Attempting to connect with SSLv3...
+[ERROR] Error testing SSLv3: [Errno 111] Connection refused
+[INFO] Attempting to connect with TLSv1.0...
+[ERROR] Error testing TLSv1.0: [Errno 111] Connection refused
+[INFO] Attempting to connect with TLSv1.1...
+[ERROR] Error testing TLSv1.1: [Errno 111] Connection refused
+
+[RESULT] Target appears SECURE against SSL/TLS downgrade attacks.
+
+[INFO] Target is SECURE against this attack. Attack proxy will not start.
+
+STDERR:
+/opt/ssl-tls-suite/phase4-tools/ssl_downgrade.py:191: DeprecationWarning: ssl.TLSVersion.SSLv3 is deprecated
+  context.minimum_version = tls_version_enum
+/opt/ssl-tls-suite/phase4-tools/ssl_downgrade.py:192: DeprecationWarning: ssl.TLSVersion.SSLv3 is deprecated
+  context.maximum_version = tls_version_enum
+/opt/ssl-tls-suite/phase4-tools/ssl_downgrade.py:191: DeprecationWarning: ssl.TLSVersion.TLSv1 is deprecated
+  context.minimum_version = tls_version_enum
+/opt/ssl-tls-suite/phase4-tools/ssl_downgrade.py:192: DeprecationWarning: ssl.TLSVersion.TLSv1 is deprecated
+  context.maximum_version = tls_version_enum
+/opt/ssl-tls-suite/phase4-tools/ssl_downgrade.py:191: DeprecationWarning: ssl.TLSVersion.TLSv1_1 is deprecated
+  context.minimum_version = tls_version_enum
+/opt/ssl-tls-suite/phase4-tools/ssl_downgrade.py:192: DeprecationWarning: ssl.TLSVersion.TLSv1_1 is deprecated
+  context.maximum_version = tls_version_enum
+

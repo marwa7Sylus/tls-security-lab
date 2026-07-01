@@ -1,0 +1,27 @@
+Tool: test_domain
+Target: google.com
+Timestamp: 20250526_055710
+Exit Code: 0
+STDOUT:
+SSL/TLS Security Analyzer
+=========================
+Loading SSL security model...
+Running sslscan on google.com...
+
+=== SECURITY ANALYSIS RESULTS ===
+Domain: google.com
+Verdict: SECURE
+Confidence: 0.55
+
+Key Configuration Details:
+- Weak cipher suites enabled
+
+Recommendations:
+1. Consider disabling TLSv1.0 - it has vulnerabilities
+2. Consider disabling TLSv1.1 - newer protocols are more secure
+3. Disable DES/3DES cipher suites - they are weak
+
+Thanks for using the SSL/TLS Security Analyzer!
+
+STDERR:
+

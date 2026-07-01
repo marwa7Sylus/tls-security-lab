@@ -1,0 +1,26 @@
+Tool: test_domain
+Target: localhost
+Timestamp: 20250526_054331
+Exit Code: 0
+STDOUT:
+SSL/TLS Security Analyzer
+=========================
+Loading SSL security model...
+Running sslscan on localhost...
+
+=== SECURITY ANALYSIS RESULTS ===
+Domain: localhost
+Verdict: INSECURE
+Confidence: 0.50
+
+Key Configuration Details:
+No major security issues detected.
+
+Recommendations:
+1. Enable TLSv1.2 - needed for good security & compatibility
+2. Enable TLSv1.3 - best security and performance
+
+Thanks for using the SSL/TLS Security Analyzer!
+
+STDERR:
+
